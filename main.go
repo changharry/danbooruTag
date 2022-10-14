@@ -221,7 +221,7 @@ func loop(w *app.Window) error {
 					),
 					layout.Rigid(
 						func(gtx C) D {
-							// We start by defining a set of margins
+							// margins
 							margins := layout.Inset{
 								Top:    unit.Dp(10),
 								Bottom: unit.Dp(25),
@@ -231,7 +231,6 @@ func loop(w *app.Window) error {
 
 							return margins.Layout(gtx,
 								func(gtx C) D {
-									// The text on the button depends on program state
 									var text string
 									text = "copy"
 									btn := material.Button(th, &clipboardButton, text)
@@ -242,7 +241,7 @@ func loop(w *app.Window) error {
 					),
 					layout.Rigid(
 						func(gtx C) D {
-							// We start by defining a set of margins
+							// margins
 							margins := layout.Inset{
 								Top:    unit.Dp(25),
 								Bottom: unit.Dp(25),
@@ -252,7 +251,6 @@ func loop(w *app.Window) error {
 
 							return margins.Layout(gtx,
 								func(gtx C) D {
-									// The text on the button depends on program state
 									var text string
 									text = "Search using local image"
 									btn := material.Button(th, &startButton, text)
@@ -263,7 +261,7 @@ func loop(w *app.Window) error {
 					),
 					layout.Rigid(
 						func(gtx C) D {
-							// We start by defining a set of margins
+							// margins
 							margins := layout.Inset{
 								Top:    unit.Dp(25),
 								Bottom: unit.Dp(25),
@@ -272,7 +270,6 @@ func loop(w *app.Window) error {
 							}
 							return margins.Layout(gtx,
 								func(gtx C) D {
-									// The text on the button depends on program state
 									var text string
 									text = "Search using url"
 									btn := material.Button(th, &startButton2, text)
