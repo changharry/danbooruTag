@@ -135,6 +135,8 @@ func loop(w *app.Window) error {
 								r = strings.ReplaceAll(r, "_", " ")
 								output = r[6:]
 							}
+						} else {
+							output = "NULL"
 						}
 					}
 
@@ -157,6 +159,8 @@ func loop(w *app.Window) error {
 								r = strings.ReplaceAll(r, "_", " ")
 								output = r[6:]
 							}
+						} else {
+							output = "NULL"
 						}
 					}
 				}
